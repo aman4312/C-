@@ -1,0 +1,45 @@
+REFERNECE VARIABLES:
+    Declaration of reference variables is preceded with '&' symbol but it is not readed as address
+INLINE FUNCTION:
+    1.to eliminate the cost of code to small function c++ proposes new feature called inline function.
+    2.inline function is fn that is expnded inline when it is invoked
+    3.compiler replaces fn call with corresponding fn code.
+    4.it is a request not a command so compiler can also ignore the request
+    ex.
+      inline void fun()//Function declaration
+      void main()
+      {
+          cout<<"Hello world";
+          fun();
+      }
+      void fun()
+      {
+          cout<<"my name is aman";
+      }
+  FUNCTION OVERLOADING:
+    1.when one function name  is overloaded with different function jobs then it is said to be function overloading means writing same function name in the code.
+    How function overloading is resolved?
+    1.find exact match this is done by matching the paramateres from the overloaded  function.
+     Ex.#include<iostream>
+     using namespace std;
+    int fun(int a,int b,int c)
+    {
+	    return a+b+c;
+	
+    }
+   float fun(int r){
+      return (3.14*r*r);
+    }
+
+    int main()
+    {
+	    cout<<fun(2,3,4)<<endl;
+	    cout<<fun(2);
+    }
+    2.if no exact match is found then c++ does by promotion:
+      char,unsigned char is promoted to int
+      float to double
+    3.if no promotion is found then standard deviation comes into picture in which any data type is converted to other data type. 
+    
+     
+      
