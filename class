@@ -48,3 +48,37 @@ int main()
 	c2.set_data(2,3);
 	c2.display_data();
 }
+
+3.CLASS TO ADD COMPLEX NUMBERS
+
+#include<iostream>
+using namespace std;
+struct complex{//by default members of class ARE private and members of struct are public this is the difference b/w struct and class
+	private:
+		int a,b;
+	public:
+		void set_data(int x,int y)
+		{
+			a=x,b=y;
+		}
+		void display_data()
+		{
+			cout<<a<<"+"<<"i"<<b;
+		}
+		complex add(complex c)
+		{
+			complex temp;
+			/* here we cant write c1.a+c2.a bcoz c1 and c2 are declard in main function so to add them we have to write as*/
+			temp.a=a+c.a;//c.a means that c2.a
+			temp.b=b+c.b;
+			return temp;
+		}
+};
+int main()
+{
+	complex c1,c2,c3;//object of the class
+	c1.set_data(2,3);
+	c2.set_data(3,4);
+	c3=c1.add(c2);
+	c3.display_data();
+}
