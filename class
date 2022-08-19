@@ -1,0 +1,50 @@
+1.#include<iostream>
+using namespace std;
+class complex{//by default members of class ARE private and members of struct are public this is the difference b/w struct and class
+	private:
+		int a,b;
+	public:
+		void set_data(int x,int y)
+		{
+			a=x,b=y;
+		}
+		void display_data()
+		{
+			cout<<a<<" "<<b;
+		}
+};
+int main()
+{
+	complex c2;//object of the class
+	c2.set_data(2,3);
+	c2.display_data();
+}
+
+
+2.class 
+
+/*we can create function outside the class
+ but they shall not be called as member of the class ,
+ for them to be called  as member of the function we have to declare the functon inside the class and address the function with class name*/
+#include<iostream>
+using namespace std;
+class complex{//by default members of class ARE private and members of struct are public this is the difference b/w struct and class
+	private:
+		int a,b;
+	public:
+		void set_data(int ,int );
+		void display_data()
+		{
+			cout<<a<<" "<<b;
+		}
+};
+void complex::set_data(int x,int y)
+{
+	a=x,b=y;
+}
+int main()
+{
+	complex c2;//object of the class
+	c2.set_data(2,3);
+	c2.display_data();
+}
