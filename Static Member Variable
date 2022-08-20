@@ -7,4 +7,65 @@
     
     
     static member function can be called with our with or  out objects  the below codes gives a better explanation
-     
+    Syntax for with object:
+        #include<iostream>
+using namespace std;
+class Account{
+	private:
+		int balance;//instance variavle
+		static float roi;//static member variable/ Class Varaible
+	public:
+		void setbalance(int b)
+		{
+			
+			balance=b;
+		}
+		static void setroi(float r)
+		{
+			roi=r;
+		}
+		void showdata()
+		{
+			cout<<balance;
+		}
+};
+float Account::roi=3.5f;
+int  main()
+{
+	Account a1;
+	a1.setbalance(2);
+	a1.showdata();
+	return 0;
+	
+}
+       Syntax for without object:
+        #include<iostream>
+using namespace std;
+class Account{
+	private:
+		static int balance;//instance variavle
+		static float roi;//static member variable/ Class Varaible
+	public:
+		static void setbalance(int b)
+		{
+			
+			balance=b;
+		}
+		static void setroi(float r)
+		{
+			roi=r;
+		}
+		static void showdata()
+		{
+			cout<<balance;
+		}
+};
+float Account::roi=3.5f;
+int  Account::balance=3.5;
+int  main()
+{
+	Account::setbalance(2);
+	Account::showdata();
+	return 0;
+	
+}
