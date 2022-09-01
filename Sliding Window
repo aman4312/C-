@@ -1,0 +1,14 @@
+GENERAL FORMAT:
+while(j<n)
+{
+calculation;
+if(j-i+1<k)
+  j++;
+ else if(j-i+1==k)
+ {
+    ans-calculation
+    calculation remove i
+    window size maintain and slide//i++ j++
+ }
+}
+  
