@@ -41,7 +41,7 @@ GENERAL FORMAT FOR VARIABLE SIZE WINDOW
 while(j<size)
 {
   calculation;
-if(j-i+1<k)
+if(condition<k)
   j++;
   else if(condtion==k)
   {
