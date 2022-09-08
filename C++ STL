@@ -1,1 +1,7 @@
 to erase a key from  map: map_name.erase(key)
+The set::count() is a built-in function in C++ STL which returns the number of times an element occurs in the set
+. It can only return 1 or 0 as the set container contains unique elements only. 
+          Syntax:set_name.count(element) 
+     
+substr(position,length): generates string from positon of length mentioned
+if(length is not given only one parameter is given then from pos till end substring is formed;
