@@ -1,0 +1,25 @@
+1:  to erase a key from  map: map_name.erase(key)
+    The set::count() is a built-in function in C++ STL which returns the number of times an element occurs in the set
+.   It can only return 1 or 0 as the set container contains unique elements only. 
+          Syntax:set_name.count(element) 
+     
+2:  substr(position,length): generates string from positon of length mentioned
+    if(length is not given only one parameter is given then from pos till end substring is formed;
+3:  1) accumulate(): This function returns the sum of all the values lying in a range between [first, last) with the variable sum.
+                     accumulate(first, last, sum);
+                              or
+                      accumulate(first, last, sum, myfun); 
+                     Parameters:
+                     first, last: first and last elements of range whose elements are to be added
+                     sum:  initial value of the sum
+                     myfun: a function for performing any specific task. 
+    2) partial_sum( ): This function assigns a partial sum of the corresponding elements of an array to every position of the second array. 
+                       It returns the partial sum of all the set of values lying between [first, last) and stores it in another array b. 
+                       Syntax:
+                       partial_sum(first, last, b);
+                              or
+                       partial_sum(first, last, b, myfun);
+                       Parameters:
+                       first, last: first and last element of range whose elements are to be added
+                       b: index of array where  corresponding partial sum will be stored
+                       myfun: a user-defined function for performing any specific task
