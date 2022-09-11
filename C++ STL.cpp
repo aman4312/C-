@@ -13,6 +13,7 @@
                      first, last: first and last elements of range whose elements are to be added
                      sum:  initial value of the sum
                      myfun: a function for performing any specific task. 
+                                                                                               
     2) partial_sum( ): This function assigns a partial sum of the corresponding elements of an array to every position of the second array. 
                        It returns the partial sum of all the set of values lying between [first, last) and stores it in another array b. 
                        Syntax:
@@ -23,3 +24,16 @@
                        first, last: first and last element of range whose elements are to be added
                        b: index of array where  corresponding partial sum will be stored
                        myfun: a user-defined function for performing any specific task
+                       
+     3)lower_bound:    It returns the first index of the element if it occurs and if does not occur then it will return an iterator pointing to the element 
+                       which is immediate next of the given element.
+                        Syntax: Iterator lower_bound (Iterator first, Iterator last, const val)
+                               Iterator lower_bound (Iterator first, Iterator last, const val) -vector_name.begin() //for index of the element.
+                         Complexity:O(n*log(n))
+            
+     4)upper_bound:    upper_bound returns an iterator pointing to the first element in the range [first,last) which has a value greater than ‘val’. 
+                        Syntax:Iterator upper_bound (Iterator first, Iterator last, const val) 
+                                Iterator upper_bound (Iterator first, Iterator last, const val) -vector_name.begin();
+                         Complexity:O(n*log(n))
+                                                                                          
+                                                                                          
