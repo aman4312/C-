@@ -37,3 +37,6 @@
                          Complexity:O(n*log(n))
                                                                                           
                                                                                           
+    5) Remove spaces from the string:
+                           SYNTAX: str.erase(remove(str.begin(), str.end(), ' '), str.end());
+                                                                                                   
