@@ -39,4 +39,6 @@
                                                                                           
     5) Remove spaces from the string:
                            SYNTAX: str.erase(remove(str.begin(), str.end(), ' '), str.end());
+    6) Map find():   Returns an iterator or constant iterator that refers to the position where key is present in the map .If the key is not present in map ,it returns 
+                    an iterator or constant which refers to map.end().
                                                                                                    
