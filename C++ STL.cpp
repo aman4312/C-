@@ -41,4 +41,11 @@
                            SYNTAX: str.erase(remove(str.begin(), str.end(), ' '), str.end());
     6) Map find():   Returns an iterator or constant iterator that refers to the position where key is present in the map .If the key is not present in map ,it returns 
                     an iterator or constant which refers to map.end().
+    7) Queue of Pairs: Syntax: queue<pair<int,int>>p;
+                               to Push : p.push({value1, value2});
+                               to acess first element from the pair: p.front().first;
+                               to access second element from the pair: p.front().second
+                               to pop: p.pop();
+                                                                                                   
+                                                                                                   
                                                                                                    
