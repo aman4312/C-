@@ -41,5 +41,7 @@ INLINE FUNCTION:
       float to double
     3.if no promotion is found then standard deviation comes into picture in which any data type is converted to other data type. 
     
-     
+   ---------------------------------------------C++ Basics----------------------------------------------------------------------
+   1. Left shift (x<<y) means shift x, y times to left or simply x*2^y.
+   2. Rigth Shift( x>>y) means shift x, y times to right or simply x/2^y.
       
