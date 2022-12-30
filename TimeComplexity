@@ -1,0 +1,5 @@
+1 : Heap is  basically a complete binary tree.
+  TC= O(logn) // for insertion and deletion
+  TC=O(1) // for peek value
+  SC: O(1)
+  
