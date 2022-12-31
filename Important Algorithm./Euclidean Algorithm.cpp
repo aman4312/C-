@@ -37,3 +37,8 @@ Approach : For finding GCD of two numbers we will  first find the minimum of the
 	    return gcd(A,B-A);
 	} 
 };
+
+
+// O(1)SC
+int gcd(int a,int b)
+	return b==0?a:gcd(b,a%b);
