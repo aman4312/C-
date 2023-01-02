@@ -44,4 +44,6 @@ INLINE FUNCTION:
    ---------------------------------------------C++ Basics----------------------------------------------------------------------
    1. Left shift (x<<y) means shift x, y times to left or simply x*2^y.
    2. Rigth Shift( x>>y) means shift x, y times to right or simply x/2^y.
+   3. int to char: a+'0'
+   4.char to int:  int(ch-'0')  or ch-'0'
       
