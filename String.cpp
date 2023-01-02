@@ -13,17 +13,23 @@
        else t+=i;
    }
    if(t.length()>0)a.push_back(t);
-          or use string stream
-     string s="Hello World";
-    istringstream ss(str);
-    string word;
-    while (ss >> word)
+               or
+    [use string stream]
+    string s="Hello world";
+    vector<string>v;
+    stringstream ss(s);
+    string token;
+    while(getline(ss, token,' '))    // s= object of stream which tell the stream from where to read the input 
+                                     //token: string object which tell where to store the string after reading from ss
+                                       //' ': it is the  character on which we have to split
+       
     {
-        // print the read word
-        cout << word << "\n";
+        v.push_back(token);
     }
-    Output: Hello 
-            World
+    cout<<v[0]<<" "<<v[1];
+     Output: Hello World;
+
+
   2: using stringstream object of c++
     Examples:
     1. Count the number of words in a string:
