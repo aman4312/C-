@@ -1,4 +1,5 @@
 // complexity: O(n*2^n)
+-------------------------Uing Bit Manipulation----------------------------------
 void printSubsequence(vector<int>a){
 vector<int>a{1,2,3,4};
     int size=pow(2,4);
@@ -16,9 +17,9 @@ vector<int>a{1,2,3,4};
     }
 }
 
-----------------------****--------------------------------------------------------------
+----------------------  Recursion ------------------------------------------------------------
     
- Using Recursion
+
  TC: O(n*2^N)
  void printSubsequence(vector<int>a, vector<vector<int>>&nums, vector<int>output,int index )
 {
