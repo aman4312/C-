@@ -48,4 +48,6 @@ INLINE FUNCTION:
    4.char to int:  int(ch-'0')  or ch-'0'
    5. OrderedMap is implemented using red black tree and unordered map using hashing
    6. Sort is implemented using intro sort which is basicallu=y hybrid of quick , insertion and heap sort
-      
+   7. BFS: QUEUE, slower than dfs
+   8. DFS : STACK, faster than dfs. 
+
