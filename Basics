@@ -50,4 +50,7 @@ INLINE FUNCTION:
    6. Sort is implemented using intro sort which is basicallu=y hybrid of quick , insertion and heap sort
    7. BFS: QUEUE, slower than dfs
    8. DFS : STACK, faster than dfs. 
-
+   9. str.find(): Find the first occuerence of the substring in the specified string 
+   	ex: str="geeks:for"
+		pos= str.find(':')
+		output: 5
