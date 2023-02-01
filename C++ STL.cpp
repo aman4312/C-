@@ -46,6 +46,10 @@
                                to acess first element from the pair: p.front().first;
                                to access second element from the pair: p.front().second
                                to pop: p.pop();
+    8) Str.find() = It is used to find the first occurence of the substring in the specified string.
+                    If string is not found it returns string::npos
+                    EX: s1="geeks for geeks" s2="geeks"
+                        if(s1.find(s2)!=string::npos)cout<<s1.find(s2)
                                                                                                    
                                                                                                    
                                                                                                    
