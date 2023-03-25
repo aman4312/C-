@@ -50,6 +50,40 @@
                     If string is not found it returns string::npos
                     EX: s1="geeks for geeks" s2="geeks"
                         if(s1.find(s2)!=string::npos)cout<<s1.find(s2)
+    9) Nested map: map<int, map<int, multiset<int>>>nodes;
+                   Here the key is int with values containing key as int and values  as multiset.
+                    TIme complexity for  insetion in multiset :O(nlogn)                                                                               
+                   Illustration: 
+                      int main(){
+                    map<int,map<int, multiset<int>>>nodes;
+                    nodes[1][2].insert(10);
+                    nodes[1][2].insert(40);
+                    nodes[1][2].insert(30);
+
+                    nodes[1][3].insert(15);
+                    nodes[1][3].insert(25);
+
+
+                    for(auto i:nodes){
+                        cout<<" Key1 "<<i.first<<endl;
+                        for(auto j:i.second){
+                            cout<<"  Key2 "<<j.first<<endl;
+                            for(auto k:j.second){
+                                cout<<"   Value"<<k<<endl;
+
+                            }
+
+                        }
+                    }
+                }
+                        Output:
+                          Key1 1
+                            Key2 2
+                             Value10
+                             Value30
+                             Value40
+                            Key2 3
+                             Value15
+                             Value25                                                                                           
                                                                                                    
-                                                                                                   
-                                                                                                   
+                                                             
