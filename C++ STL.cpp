@@ -85,5 +85,7 @@
                             Key2 3
                              Value15
                              Value25                                                                                           
-                                                                                                   
+10: BInary Search Stl
+    binary_search(startaddress, 
+              endaddress, valuetofind)
                                                              
